@@ -6,12 +6,10 @@
 //
 //
 
-//! Project version number for Vlow.
-FOUNDATION_EXPORT double VlowVersionNumber;
-
-//! Project version string for Vlow.
-FOUNDATION_EXPORT const unsigned char VlowVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <Vlow/PublicHeader.h>
-
-
+//#import <PureData/AudioHelpers.h>
+//#import <PureData/PdAudioController.h>
+//#import <PureData/PdAudioUnit.h>
+//#import <PureData/PdBase.h>
+//#import <PureData/PdDispatcher.h>
+//#import <PureData/PdFile.h>
+//#import <PureData/PdMidiDispatcher.h>
