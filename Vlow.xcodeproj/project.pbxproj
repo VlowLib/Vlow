@@ -10,6 +10,9 @@
 		5F67A7C01A545ACC0031FF27 /* Vlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F67A7BF1A545ACC0031FF27 /* Vlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F67A7C61A545ACC0031FF27 /* Vlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F67A7BA1A545ACC0031FF27 /* Vlow.framework */; };
 		5F67A7CD1A545ACC0031FF27 /* VlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7CC1A545ACC0031FF27 /* VlowTests.m */; };
+		5F67A7D81A545C340031FF27 /* VlowNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F67A7D61A545C340031FF27 /* VlowNode.h */; };
+		5F67A7D91A545C340031FF27 /* VlowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7D71A545C340031FF27 /* VlowNode.m */; };
+		CA7ACB46651B65A27A2271AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		016626F0FFF2840991F969E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F67A7BA1A545ACC0031FF27 /* Vlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F67A7BE1A545ACC0031FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F67A7BF1A545ACC0031FF27 /* Vlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vlow.h; sourceTree = "<group>"; };
 		5F67A7C51A545ACC0031FF27 /* VlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F67A7CB1A545ACC0031FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F67A7CC1A545ACC0031FF27 /* VlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlowTests.m; sourceTree = "<group>"; };
+		5F67A7D61A545C340031FF27 /* VlowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowNode.h; sourceTree = "<group>"; };
+		5F67A7D71A545C340031FF27 /* VlowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowNode.m; sourceTree = "<group>"; };
+		684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA7ACB46651B65A27A2271AF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30EAAD5AF111635813576E7A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */,
+				F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5F67A7B01A545ACB0031FF27 = {
 			isa = PBXGroup;
 			children = (
 				5F67A7BC1A545ACC0031FF27 /* Vlow */,
 				5F67A7C91A545ACC0031FF27 /* VlowTests */,
 				5F67A7BB1A545ACC0031FF27 /* Products */,
+				30EAAD5AF111635813576E7A /* Pods */,
+				C1AFB5989896FA18238F42C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				5F67A7BF1A545ACC0031FF27 /* Vlow.h */,
+				5F67A7D61A545C340031FF27 /* VlowNode.h */,
+				5F67A7D71A545C340031FF27 /* VlowNode.m */,
 				5F67A7BD1A545ACC0031FF27 /* Supporting Files */,
 			);
 			path = Vlow;
@@ -102,6 +124,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C1AFB5989896FA18238F42C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				016626F0FFF2840991F969E3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -109,6 +139,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F67A7D81A545C340031FF27 /* VlowNode.h in Headers */,
 				5F67A7C01A545ACC0031FF27 /* Vlow.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -120,10 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F67A7D01A545ACC0031FF27 /* Build configuration list for PBXNativeTarget "Vlow" */;
 			buildPhases = (
+				AA4FDAB8DAE4BC50E8B08090 /* Check Pods Manifest.lock */,
 				5F67A7B51A545ACC0031FF27 /* Sources */,
 				5F67A7B61A545ACC0031FF27 /* Frameworks */,
 				5F67A7B71A545ACC0031FF27 /* Headers */,
 				5F67A7B81A545ACC0031FF27 /* Resources */,
+				008F7AEA278A0AF919FDA42E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +191,7 @@
 		5F67A7B11A545ACC0031FF27 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Vlow;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Chelseph;
 				TargetAttributes = {
@@ -204,11 +238,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		008F7AEA278A0AF919FDA42E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA4FDAB8DAE4BC50E8B08090 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F67A7B51A545ACC0031FF27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F67A7D91A545C340031FF27 /* VlowNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +385,7 @@
 		};
 		5F67A7D11A545ACC0031FF27 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -332,6 +401,7 @@
 		};
 		5F67A7D21A545ACC0031FF27 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -394,6 +464,7 @@
 				5F67A7D21A545ACC0031FF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F67A7D31A545ACC0031FF27 /* Build configuration list for PBXNativeTarget "VlowTests" */ = {
 			isa = XCConfigurationList;
@@ -402,6 +473,7 @@
 				5F67A7D51A545ACC0031FF27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
