@@ -1,5 +1,4 @@
 PODS:
-  - Archimedes (1.1)
   - libpd (0.7.0)
   - ObjectiveSugar (1.1.1)
   - ReactiveCocoa (2.4.2):
@@ -9,15 +8,11 @@ PODS:
   - ReactiveCocoa/no-arc (2.4.2)
   - ReactiveCocoa/UI (2.4.2):
     - ReactiveCocoa/Core
-  - ReactiveCocoaLayout (0.4):
-    - Archimedes
-    - ReactiveCocoa (~> 2.0)
 
 DEPENDENCIES:
   - libpd
   - ObjectiveSugar (from `git@github.com:jconst/ObjectiveSugar.git`)
   - ReactiveCocoa
-  - ReactiveCocoaLayout
 
 EXTERNAL SOURCES:
   ObjectiveSugar:
@@ -29,10 +24,8 @@ CHECKOUT OPTIONS:
     :git: git@github.com:jconst/ObjectiveSugar.git
 
 SPEC CHECKSUMS:
-  Archimedes: f2de3a19892908a92c9ad4d23f6776b377f7ed28
   libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
   ObjectiveSugar: 085698df93ceaffba937eafd0a28c7be475d8f29
   ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
-  ReactiveCocoaLayout: 55d636c5c01e4a154173746f2bb9238ac7184f0d
 
 COCOAPODS: 0.36.0.beta.1

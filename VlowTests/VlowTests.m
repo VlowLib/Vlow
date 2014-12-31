@@ -16,12 +16,19 @@
 
 @implementation VlowTests
 
-- (void)testExample
+- (void)testChain
 {
     VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
     XCTAssertEqual(chain.description,
                    @"adc~ -> pitchshift~ -> dac~",
                    @"chain description");
+}
+
+- (void)testPureDataConversion
+{
+    VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
+    NSLog(@"pd:\n\n%@\n\n", [chain pureDataPatch]);
+    XCTAssertEqual(YES, YES, @"pd output should equal fixture");
 }
 
 @end

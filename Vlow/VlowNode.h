@@ -25,4 +25,8 @@
 /// input of `next`, and returns the receiver
 - (VlowNode *)connect:(VlowNode *)next;
 
+- (void)startPatch;
+
+- (NSString *)pureDataPatch;
+
 @end

@@ -1,0 +1,6 @@
+#N canvas 0 0 30 90 vlowpatch;
+#X obj 0 0 adc~;
+#X obj 0 30 pitchshift~;
+#X obj 0 60 dac~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
