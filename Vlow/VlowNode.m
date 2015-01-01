@@ -27,10 +27,14 @@
 
 + (instancetype)chain:(NSArray *)nodes
 {
-    return [[nodes reverse]
-    reduce:^VlowNode *(VlowNode *acc, VlowNode *next) {
-        return [next connect:acc];
-    }];
+    VlowNode *acc = nodes.lastObject;
+    NSEnumerator *reversed = nodes.reverseObjectEnumerator;
+    for (VlowNode *next in reversed) {
+        if (next != acc) {
+            acc = [next connect:acc];
+        }
+    }
+    return acc;
 }
 
 - (VlowNode *)connect:(VlowNode *)next

@@ -19,9 +19,9 @@
 - (void)testChain
 {
     VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
-    XCTAssertEqual(chain.description,
-                   @"adc~ -> pitchshift~ -> dac~",
-                   @"chain description");
+    NSLog(@"chain: %@", chain);
+    XCTAssert([chain.description isEqualToString:@"adc~ -> pitchshift~ -> dac~"],
+              @"chain description");
 }
 
 - (void)testPureDataConversion

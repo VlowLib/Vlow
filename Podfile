@@ -2,5 +2,5 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '7.0'
 
 pod 'ReactiveCocoa'
-pod 'ObjectiveSugar', :git => 'git@github.com:jconst/ObjectiveSugar.git'
+pod 'ObjectiveSugar'
 pod 'libpd'

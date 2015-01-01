@@ -1,6 +1,6 @@
 PODS:
   - libpd (0.7.0)
-  - ObjectiveSugar (1.1.1)
+  - ObjectiveSugar (1.1.0)
   - ReactiveCocoa (2.4.2):
     - ReactiveCocoa/UI (= 2.4.2)
   - ReactiveCocoa/Core (2.4.2):
@@ -11,21 +11,12 @@ PODS:
 
 DEPENDENCIES:
   - libpd
-  - ObjectiveSugar (from `git@github.com:jconst/ObjectiveSugar.git`)
+  - ObjectiveSugar
   - ReactiveCocoa
-
-EXTERNAL SOURCES:
-  ObjectiveSugar:
-    :git: git@github.com:jconst/ObjectiveSugar.git
-
-CHECKOUT OPTIONS:
-  ObjectiveSugar:
-    :commit: a0e40680df15500442d52aff6297532cd7131406
-    :git: git@github.com:jconst/ObjectiveSugar.git
 
 SPEC CHECKSUMS:
   libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
-  ObjectiveSugar: 085698df93ceaffba937eafd0a28c7be475d8f29
+  ObjectiveSugar: f48793f5902c77cfc02a4ce46d2e8ecddcad4dc2
   ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
 
 COCOAPODS: 0.36.0.beta.1
