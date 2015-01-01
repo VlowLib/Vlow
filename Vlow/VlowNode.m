@@ -46,7 +46,7 @@
 {
     self.outs = [self.outs arrayByAddingObject:next];
     
-    NSString *receiver = [NSString stringWithFormat:@"vlow-connect-%d",
+    NSString *receiver = [NSString stringWithFormat:@"vlow-router-%d",
                           self.patch.dollarZero];
     NSString *message  = [NSString stringWithFormat:@"set vlow-pipe-%d",
                           next.patch.dollarZero];
