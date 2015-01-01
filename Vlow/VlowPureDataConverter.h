@@ -12,6 +12,6 @@
 
 @interface VlowPureDataConverter : NSObject
 
-+ (NSString *)pureDataPatchFromRootNode:(VlowNode *)root;
++ (NSString *)pureDataPatchFromGraph:(VlowNode *)root;
 
 @end

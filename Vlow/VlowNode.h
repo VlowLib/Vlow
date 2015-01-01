@@ -9,13 +9,16 @@
 #import <Foundation/Foundation.h>
 
 #define VLO(X) [VlowNode node:X]
-#define VlowIn VLO(@"adc~")
-#define VlowOut VLO(@"dac~")
+#define VlowIn VLO(@"vlowin")
+#define VlowOut VLO(@"vlowout")
+
+@class PdFile;
 
 @interface VlowNode : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *outs;
+@property (nonatomic, strong) PdFile *patch;
 
 + (instancetype)node:(NSString *)name;
 + (instancetype)nodeWithName:(NSString *)name outLinks:(NSArray *)nodes;
@@ -25,8 +28,7 @@
 /// input of `next`, and returns the receiver
 - (VlowNode *)connect:(VlowNode *)next;
 
-- (void)startPatch;
-
-- (NSString *)pureDataPatch;
+//- (void)startPatch;
+//- (NSString *)pureDataPatch;
 
 @end

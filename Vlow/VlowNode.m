@@ -10,9 +10,8 @@
 #import "ObjectiveSugar.h"
 #import "ReactiveCocoa.h"
 #import "PdBase.h"
+#import "PdFile.h"
 #import "VlowPureDataConverter.h"
-
-#define kPatchFileName @"vlow-current-patch.pd"
 
 @implementation VlowNode
 
@@ -26,6 +25,8 @@
     VlowNode *node = [VlowNode new];
     node.name = name;
     node.outs = nodes;
+    node.patch = [PdFile openFileNamed:[name stringByAppendingString:@".pd"]
+                                  path:[[NSBundle mainBundle] resourcePath]];
     return node;
 }
 
@@ -44,6 +45,13 @@
 - (VlowNode *)connect:(VlowNode *)next
 {
     self.outs = [self.outs arrayByAddingObject:next];
+    
+    NSString *receiver = [NSString stringWithFormat:@"vlow-connect-%d",
+                          self.patch.dollarZero];
+    NSString *message  = [NSString stringWithFormat:@"set vlow-pipe-%d",
+                          next.patch.dollarZero];
+    [PdBase sendMessage:message withArguments:nil toReceiver:receiver];
+    
     return self;
 }
 
@@ -59,26 +67,26 @@
     return [self.name stringByAppendingString:suffix];
 }
 
-- (void)startPatch
-{
-    [PdBase addToSearchPath:[[NSBundle mainBundle] resourcePath]];
-    [PdBase addToSearchPath:NSTemporaryDirectory()];
-    NSURL *patchURL = [[NSURL fileURLWithPath:NSTemporaryDirectory() isDirectory:YES]
-                       URLByAppendingPathComponent:kPatchFileName];
-    
-    [[self pureDataPatch] writeToURL:patchURL
-                          atomically:YES
-                            encoding:NSASCIIStringEncoding
-                               error:NULL];
-    
-    [PdBase openFile:kPatchFileName path:NSTemporaryDirectory()];
-}
-
-#pragma mark - PureData
-
-- (NSString *)pureDataPatch
-{
-    return [VlowPureDataConverter pureDataPatchFromRootNode:self];
-}
+//- (void)startPatch
+//{
+//    [PdBase addToSearchPath:[[NSBundle mainBundle] resourcePath]];
+//    [PdBase addToSearchPath:NSTemporaryDirectory()];
+//    NSURL *patchURL = [[NSURL fileURLWithPath:NSTemporaryDirectory() isDirectory:YES]
+//                       URLByAppendingPathComponent:kPatchFileName];
+//    
+//    [[self pureDataPatch] writeToURL:patchURL
+//                          atomically:YES
+//                            encoding:NSASCIIStringEncoding
+//                               error:NULL];
+//    
+//    [PdBase openFile:kPatchFileName path:NSTemporaryDirectory()];
+//}
+//
+//#pragma mark - PureData
+//
+//- (NSString *)pureDataPatch
+//{
+//    return [VlowPureDataConverter pureDataPatchFromGraph:self];
+//}
 
 @end

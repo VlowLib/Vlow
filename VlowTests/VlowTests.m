@@ -18,17 +18,17 @@
 
 - (void)testChain
 {
-    VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
+    VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift"), VlowOut]];
     NSLog(@"chain: %@", chain);
-    XCTAssert([chain.description isEqualToString:@"adc~ -> pitchshift~ -> dac~"],
+    XCTAssert([chain.description isEqualToString:@"vlowin -> pitchshift -> vlowout"],
               @"chain description");
 }
 
-- (void)testPureDataConversion
-{
-    VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
-    NSLog(@"pd:\n\n%@\n\n", [chain pureDataPatch]);
-    XCTAssertEqual(YES, YES, @"pd output should equal fixture");
-}
+//- (void)testPureDataConversion
+//{
+//    VlowNode *chain = [VlowNode chain:@[VlowIn, VLO(@"pitchshift~"), VlowOut]];
+//    NSLog(@"pd:\n\n%@\n\n", [chain pureDataPatch]);
+//    XCTAssertEqual(YES, YES, @"pd output should equal fixture");
+//}
 
 @end

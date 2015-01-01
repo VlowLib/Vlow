@@ -1,0 +1,8 @@
+#N canvas 24 411 450 300 10;
+#X obj 16 85 adc~;
+#X obj 83 102 r vlow-connect-\$0;
+#X text 193 103 sends "set <catcher-name>" messages;
+#X obj 21 156 throw~;
+#X connect 0 0 3 0;
+#X connect 0 1 3 0;
+#X connect 1 0 3 0;

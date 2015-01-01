@@ -11,7 +11,7 @@
 
 @implementation VlowPureDataConverter
 
-+ (NSString *)pureDataPatchFromRootNode:(VlowNode *)root
++ (NSString *)pureDataPatchFromGraph:(VlowNode *)root
 {
     // TODO: get working for graphs with loops,
     // multiple nodes w/ same name,

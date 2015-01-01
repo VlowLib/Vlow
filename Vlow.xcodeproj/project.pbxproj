@@ -14,6 +14,9 @@
 		5F67A7D91A545C340031FF27 /* VlowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7D71A545C340031FF27 /* VlowNode.m */; };
 		5F67A7DF1A5514D10031FF27 /* VlowPureDataConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */; };
 		5F67A7E01A5514D10031FF27 /* VlowPureDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */; };
+		5F67A7EA1A55E2060031FF27 /* pitchshift.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E71A55E2060031FF27 /* pitchshift.pd */; };
+		5F67A7EB1A55E2060031FF27 /* vlowin.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E81A55E2060031FF27 /* vlowin.pd */; };
+		5F67A7EC1A55E2060031FF27 /* vlowout.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E91A55E2060031FF27 /* vlowout.pd */; };
 		CA7ACB46651B65A27A2271AF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		5F67A7D71A545C340031FF27 /* VlowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowNode.m; sourceTree = "<group>"; };
 		5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowPureDataConverter.h; sourceTree = "<group>"; };
 		5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowPureDataConverter.m; sourceTree = "<group>"; };
+		5F67A7E71A55E2060031FF27 /* pitchshift.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pitchshift.pd; sourceTree = "<group>"; };
+		5F67A7E81A55E2060031FF27 /* vlowin.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vlowin.pd; sourceTree = "<group>"; };
+		5F67A7E91A55E2060031FF27 /* vlowout.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vlowout.pd; sourceTree = "<group>"; };
 		684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +106,7 @@
 				5F67A7D71A545C340031FF27 /* VlowNode.m */,
 				5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */,
 				5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */,
+				5F67A7E61A55E2060031FF27 /* PureData */,
 				5F67A7BD1A545ACC0031FF27 /* Supporting Files */,
 			);
 			path = Vlow;
@@ -129,6 +136,16 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		5F67A7E61A55E2060031FF27 /* PureData */ = {
+			isa = PBXGroup;
+			children = (
+				5F67A7E71A55E2060031FF27 /* pitchshift.pd */,
+				5F67A7E81A55E2060031FF27 /* vlowin.pd */,
+				5F67A7E91A55E2060031FF27 /* vlowout.pd */,
+			);
+			path = PureData;
+			sourceTree = SOURCE_ROOT;
 		};
 		C1AFB5989896FA18238F42C2 /* Frameworks */ = {
 			isa = PBXGroup;
@@ -233,6 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F67A7EC1A55E2060031FF27 /* vlowout.pd in Resources */,
+				5F67A7EB1A55E2060031FF27 /* vlowin.pd in Resources */,
+				5F67A7EA1A55E2060031FF27 /* pitchshift.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
