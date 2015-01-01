@@ -1,8 +1,10 @@
 #N canvas 158 289 437 124 10;
 #X obj 18 18 adc~;
 #X text 201 36 sends "set <catcher-name>" messages;
-#X obj 23 89 throw~;
+#X obj 28 95 throw~;
 #X obj 85 35 r vlow-router-\$0;
+#X msg 85 63 set vlow-pipe-\$1;
 #X connect 0 0 2 0;
 #X connect 0 1 2 0;
-#X connect 3 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;

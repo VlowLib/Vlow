@@ -48,9 +48,9 @@
     
     NSString *receiver = [NSString stringWithFormat:@"vlow-router-%d",
                           self.patch.dollarZero];
-    NSString *message  = [NSString stringWithFormat:@"set vlow-pipe-%d",
+    NSString *message  = [NSString stringWithFormat:@"%d",
                           next.patch.dollarZero];
-    [PdBase sendMessage:message withArguments:nil toReceiver:receiver];
+    [PdBase sendSymbol:message toReceiver:receiver];
     
     return self;
 }
