@@ -12,6 +12,7 @@
 #import "PdBase.h"
 #import "PdFile.h"
 #import "VlowPureDataConverter.h"
+#import "VlowAudioController.h"
 
 @implementation VlowNode
 
@@ -27,6 +28,9 @@
     node.outs = nodes;
     node.patch = [PdFile openFileNamed:[name stringByAppendingString:@".pd"]
                                   path:[[NSBundle mainBundle] resourcePath]];
+    if (![VlowAudioController sharedInstance].controller) {
+        [[VlowAudioController sharedInstance] setupController];
+    }
     return node;
 }
 

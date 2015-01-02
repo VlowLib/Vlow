@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F30F92C1A562CB900FC3F0B /* VlowAudioController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F30F92A1A562CB900FC3F0B /* VlowAudioController.h */; };
+		5F30F92D1A562CB900FC3F0B /* VlowAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */; };
 		5F67A7C01A545ACC0031FF27 /* Vlow.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F67A7BF1A545ACC0031FF27 /* Vlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F67A7C61A545ACC0031FF27 /* Vlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F67A7BA1A545ACC0031FF27 /* Vlow.framework */; };
 		5F67A7CD1A545ACC0031FF27 /* VlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7CC1A545ACC0031FF27 /* VlowTests.m */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		016626F0FFF2840991F969E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F30F92A1A562CB900FC3F0B /* VlowAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowAudioController.h; sourceTree = "<group>"; };
+		5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowAudioController.m; sourceTree = "<group>"; };
 		5F67A7BA1A545ACC0031FF27 /* Vlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F67A7BE1A545ACC0031FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F67A7BF1A545ACC0031FF27 /* Vlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vlow.h; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 				5F67A7BF1A545ACC0031FF27 /* Vlow.h */,
 				5F67A7D61A545C340031FF27 /* VlowNode.h */,
 				5F67A7D71A545C340031FF27 /* VlowNode.m */,
+				5F30F92A1A562CB900FC3F0B /* VlowAudioController.h */,
+				5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */,
 				5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */,
 				5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */,
 				5F67A7E61A55E2060031FF27 /* PureData */,
@@ -163,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F67A7D81A545C340031FF27 /* VlowNode.h in Headers */,
+				5F30F92C1A562CB900FC3F0B /* VlowAudioController.h in Headers */,
 				5F67A7DF1A5514D10031FF27 /* VlowPureDataConverter.h in Headers */,
 				5F67A7C01A545ACC0031FF27 /* Vlow.h in Headers */,
 			);
@@ -305,6 +312,7 @@
 			files = (
 				5F67A7E01A5514D10031FF27 /* VlowPureDataConverter.m in Sources */,
 				5F67A7D91A545C340031FF27 /* VlowNode.m in Sources */,
+				5F30F92D1A562CB900FC3F0B /* VlowAudioController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
