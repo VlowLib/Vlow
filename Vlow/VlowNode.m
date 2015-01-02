@@ -71,6 +71,27 @@
     return [self.name stringByAppendingString:suffix];
 }
 
+- (void)bindParameter:(NSString *)paramName toSignal:(RACSignal *)signal
+{
+    [signal subscribeNext:^(id value) {
+        [self setParameter:paramName toValue:value];
+    }];
+}
+
+- (void)setParameter:(NSString *)paramName toValue:(id)value
+{
+    NSString *receiver = [NSString stringWithFormat:@"%@-%d",
+                          paramName, self.patch.dollarZero];
+    if ([value isKindOfClass:[NSNumber class]]) {
+        [PdBase sendFloat:[value floatValue] toReceiver:receiver];
+    } else if ([value isKindOfClass:[NSString class]]) {
+        [PdBase sendMessage:value withArguments:nil
+                 toReceiver:receiver];
+    } else if ([value isKindOfClass:[NSArray class]]) {
+        [PdBase sendList:value toReceiver:receiver];
+    }
+}
+
 //- (void)startPatch
 //{
 //    [PdBase addToSearchPath:[[NSBundle mainBundle] resourcePath]];

@@ -12,7 +12,7 @@
 #define VlowIn VLO(@"vlowin")
 #define VlowOut VLO(@"vlowout")
 
-@class PdFile;
+@class PdFile, RACSignal;
 
 @interface VlowNode : NSObject
 
@@ -27,6 +27,9 @@
 ///	Connect the receiver's output to the
 /// input of `next`, and returns the receiver
 - (VlowNode *)connect:(VlowNode *)next;
+
+- (void)setParameter:(NSString *)paramName toValue:(id)value;
+- (void)bindParameter:(NSString *)paramName toSignal:(RACSignal *)signal;
 
 //- (void)startPatch;
 //- (NSString *)pureDataPatch;
