@@ -80,6 +80,9 @@
 
 - (void)setParameter:(NSString *)paramName toValue:(id)value
 {
+    if (!value || !paramName || paramName.length == 0) {
+        return;
+    }
     NSString *receiver = [NSString stringWithFormat:@"%@-%d",
                           paramName, self.patch.dollarZero];
     if ([value isKindOfClass:[NSNumber class]]) {
