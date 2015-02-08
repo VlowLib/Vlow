@@ -36,15 +36,27 @@
 
 + (instancetype)chain:(NSArray *)nodes
 {
-    VlowNode *acc = nodes.lastObject;
+    VlowNode *acc = nil;
     NSEnumerator *reversed = nodes.reverseObjectEnumerator;
     for (VlowNode *next in reversed) {
-        if (next != acc) {
-            acc = [next connect:acc];
-        }
+        acc = acc
+            ? [[next copy] connect:acc]
+            : [nodes.lastObject copy];
     }
     return acc;
 }
+
+- (id)init
+{
+    if (!(self = [super init]))
+        return nil;
+    
+    self.name = @"";
+    self.outs = @[];
+    
+    return self;
+}
+
 
 - (VlowNode *)connect:(VlowNode *)next
 {
@@ -116,5 +128,16 @@
 //{
 //    return [VlowPureDataConverter pureDataPatchFromGraph:self];
 //}
+
+#pragma mark - NSCopying
+
+- (id)copyWithZone:(NSZone *)zone
+{
+    VlowNode *copy = [[[self class] allocWithZone:zone] init];
+    copy.name = self.name;
+    copy.patch = [self.patch openNewInstance];
+    //just leave outs empty
+    return copy;
+}
 
 @end

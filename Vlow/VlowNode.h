@@ -14,7 +14,7 @@
 
 @class PdFile, RACSignal;
 
-@interface VlowNode : NSObject
+@interface VlowNode : NSObject <NSCopying>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSArray *outs;
