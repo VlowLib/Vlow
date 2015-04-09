@@ -10,6 +10,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    VlowNode *chain;
+}
 
 @end
 
@@ -19,7 +22,7 @@
 {
     [super viewDidLoad];
     
-    [VlowIn connect:VlowOut];
+    chain = [VlowIn connect:VlowOut];
 }
 
 @end
