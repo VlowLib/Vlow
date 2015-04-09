@@ -7,7 +7,7 @@
 //
 
 #import "VlowAudioController.h"
-#import "PdAudioController.h"
+#import <libpd/PdAudioController.h>
 
 @implementation VlowAudioController
 
@@ -24,17 +24,17 @@
 - (void)setupController
 {
     self.controller = [PdAudioController new];
-    [self.controller configurePlaybackWithSampleRate:44100
-                                      numberChannels:2
-                                        inputEnabled:YES
-                                       mixingEnabled:YES];
-//    if (status == PdAudioError) {
-//        NSLog(@"Error! Could not configure PdAudioController");
-//    } else if (status == PdAudioPropertyChanged) {
-//        NSLog(@"Warning: some of the audio parameters were not accceptable.");
-//    } else {
-//        NSLog(@"Audio Configuration successful.");
-//    }
+    PdAudioStatus stat = [self.controller configurePlaybackWithSampleRate:44100
+                                                           numberChannels:2
+                                                             inputEnabled:YES
+                                                            mixingEnabled:YES];
+    if (stat == PdAudioError) {
+        NSLog(@"Error! Could not configure PdAudioController");
+    } else if (stat == PdAudioPropertyChanged) {
+        NSLog(@"Warning: some of the audio parameters were not accceptable.");
+    } else if (stat == PdAudioOK) {
+        NSLog(@"Audio Configuration successful.");
+    }
     self.controller.active = YES;
 }
 

@@ -1,12 +1,12 @@
 PODS:
   - libpd (0.7.0)
   - ObjectiveSugar (1.1.0)
-  - ReactiveCocoa (2.4.2):
-    - ReactiveCocoa/UI (= 2.4.2)
-  - ReactiveCocoa/Core (2.4.2):
+  - ReactiveCocoa (2.4.7):
+    - ReactiveCocoa/UI (= 2.4.7)
+  - ReactiveCocoa/Core (2.4.7):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.4.2)
-  - ReactiveCocoa/UI (2.4.2):
+  - ReactiveCocoa/no-arc (2.4.7)
+  - ReactiveCocoa/UI (2.4.7):
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
@@ -15,8 +15,8 @@ DEPENDENCIES:
   - ReactiveCocoa
 
 SPEC CHECKSUMS:
-  libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
-  ObjectiveSugar: f48793f5902c77cfc02a4ce46d2e8ecddcad4dc2
-  ReactiveCocoa: 8418a82b67af2f1b7587baf29c329040a23c2063
+  libpd: 73e50c4998c95addfb7c47bd9054b9c40019d3fc
+  ObjectiveSugar: a6a25f23d657c19df0a0b972466d5b5ca9f5295c
+  ReactiveCocoa: eb38dee0a0e698f73a9b25e5c1faea2bb4c79240
 
-COCOAPODS: 0.36.0.beta.1
+COCOAPODS: 0.36.0
