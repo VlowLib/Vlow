@@ -17,4 +17,5 @@ FOUNDATION_EXPORT const unsigned char VlowVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <Vlow/PublicHeader.h>
 
 #import "VlowNode.h"
+#import "VlowGraph.h"
 

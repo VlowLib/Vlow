@@ -13,20 +13,17 @@
 		F077171A1AD7250500242FDB /* pitchshift.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E71A55E2060031FF27 /* pitchshift.pd */; };
 		F077171B1AD7250500242FDB /* vlowin.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E81A55E2060031FF27 /* vlowin.pd */; };
 		F077171C1AD7250500242FDB /* vlowout.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E91A55E2060031FF27 /* vlowout.pd */; };
+		F07717211AD7654500242FDB /* VlowGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F07717201AD7654500242FDB /* VlowGraph.m */; };
 		F08692051AD71FAE00C2EF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F08692041AD71FAE00C2EF28 /* main.m */; };
 		F08692081AD71FAE00C2EF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F08692071AD71FAE00C2EF28 /* AppDelegate.m */; };
 		F086920B1AD71FAE00C2EF28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F086920A1AD71FAE00C2EF28 /* ViewController.m */; };
 		F08692281AD7203C00C2EF28 /* VlowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7D71A545C340031FF27 /* VlowNode.m */; };
-		F086922A1AD7203C00C2EF28 /* VlowAudioController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */; };
-		F086922C1AD7203C00C2EF28 /* VlowPureDataConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */; };
 		F086922D1AD7219300C2EF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086920C1AD71FAE00C2EF28 /* Main.storyboard */; };
 		F086922E1AD7219E00C2EF28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08692111AD71FAE00C2EF28 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		016626F0FFF2840991F969E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F30F92A1A562CB900FC3F0B /* VlowAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowAudioController.h; sourceTree = "<group>"; };
-		5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowAudioController.m; sourceTree = "<group>"; };
 		5F67A7BE1A545ACC0031FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F67A7BF1A545ACC0031FF27 /* Vlow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vlow.h; sourceTree = "<group>"; };
 		5F67A7C51A545ACC0031FF27 /* VlowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VlowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,12 +31,12 @@
 		5F67A7CC1A545ACC0031FF27 /* VlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlowTests.m; sourceTree = "<group>"; };
 		5F67A7D61A545C340031FF27 /* VlowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowNode.h; sourceTree = "<group>"; };
 		5F67A7D71A545C340031FF27 /* VlowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowNode.m; sourceTree = "<group>"; };
-		5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowPureDataConverter.h; sourceTree = "<group>"; };
-		5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowPureDataConverter.m; sourceTree = "<group>"; };
 		5F67A7E71A55E2060031FF27 /* pitchshift.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pitchshift.pd; sourceTree = "<group>"; };
 		5F67A7E81A55E2060031FF27 /* vlowin.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vlowin.pd; sourceTree = "<group>"; };
 		5F67A7E91A55E2060031FF27 /* vlowout.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vlowout.pd; sourceTree = "<group>"; };
 		684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F077171F1AD7654500242FDB /* VlowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowGraph.h; sourceTree = "<group>"; };
+		F07717201AD7654500242FDB /* VlowGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowGraph.m; sourceTree = "<group>"; };
 		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F08692001AD71FAE00C2EF28 /* VlowSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VlowSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08692031AD71FAE00C2EF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,10 +105,8 @@
 				5F67A7BF1A545ACC0031FF27 /* Vlow.h */,
 				5F67A7D61A545C340031FF27 /* VlowNode.h */,
 				5F67A7D71A545C340031FF27 /* VlowNode.m */,
-				5F30F92A1A562CB900FC3F0B /* VlowAudioController.h */,
-				5F30F92B1A562CB900FC3F0B /* VlowAudioController.m */,
-				5F67A7DD1A5514D10031FF27 /* VlowPureDataConverter.h */,
-				5F67A7DE1A5514D10031FF27 /* VlowPureDataConverter.m */,
+				F077171F1AD7654500242FDB /* VlowGraph.h */,
+				F07717201AD7654500242FDB /* VlowGraph.m */,
 				5F67A7E61A55E2060031FF27 /* PureData */,
 				5F67A7BD1A545ACC0031FF27 /* Supporting Files */,
 			);
@@ -361,8 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08692281AD7203C00C2EF28 /* VlowNode.m in Sources */,
-				F086922A1AD7203C00C2EF28 /* VlowAudioController.m in Sources */,
-				F086922C1AD7203C00C2EF28 /* VlowPureDataConverter.m in Sources */,
+				F07717211AD7654500242FDB /* VlowGraph.m in Sources */,
 				F086920B1AD71FAE00C2EF28 /* ViewController.m in Sources */,
 				F08692081AD71FAE00C2EF28 /* AppDelegate.m in Sources */,
 				F08692051AD71FAE00C2EF28 /* main.m in Sources */,

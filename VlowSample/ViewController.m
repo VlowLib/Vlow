@@ -8,10 +8,11 @@
 
 #import "Vlow.h"
 #import "ViewController.h"
+#import "VlowGraph.h"
 
 @interface ViewController ()
 {
-    VlowNode *chain;
+    VlowGraph *g;
 }
 
 @end
@@ -22,7 +23,7 @@
 {
     [super viewDidLoad];
     
-    chain = [VlowIn connect:VlowOut];
+    g = [[VlowGraph alloc] initWithNodes:@[VlowIn, VlowOut]];
 }
 
 @end
