@@ -23,7 +23,10 @@
 {
     [super viewDidLoad];
     
-    g = [[VlowGraph alloc] initWithNodes:@[VlowIn, VlowOut]];
+    g = [VlowGraph new];
+    VlowNode *rev = VLO(@"reverb");
+    [rev setParameter:@"mix" toValue:@1];
+    g.nodes = @[VlowIn, rev, VlowOut];
 }
 
 @end

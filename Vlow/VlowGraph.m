@@ -14,6 +14,8 @@
 #import "VlowGraph.h"
 #import "VlowNode.h"
 
+void freeverb_tilde_setup(void);
+
 @interface VlowGraph ()
 
 @property (nonatomic, strong) PdAudioController *controller;
@@ -22,13 +24,22 @@
 
 @implementation VlowGraph
 
-- (id)initWithNodes:(NSArray *)nodes
+- (id)init
 {
     if (!(self = [super init]))
         return nil;
     
-    self.nodes = nodes;
     [self activate];
+    
+    return self;
+}
+
+- (id)initWithNodes:(NSArray *)nodes
+{
+    if (!(self = [self init]))
+        return nil;
+    
+    self.nodes = nodes;
     
     return self;
 }
@@ -70,6 +81,7 @@
         NSLog(@"Audio Configuration successful.");
     }
     self.controller.active = YES;
+    freeverb_tilde_setup();
 }
 
 @end

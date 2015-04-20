@@ -13,12 +13,14 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/VlowLib/Vlow.git" }
   s.source_files  = "Vlow"
 
-  s.resources = "PureData/*.pd"
+  s.resources = "PureData/Patches/*.pd"
 
   s.requires_arc = true
 
   s.dependency "libpd"
   s.dependency "ReactiveCocoa", "~> 2.4"
   s.dependency "ObjectiveSugar", "~> 1.1"
+
+  s.compiler_flags = '-DPD'
 
 end
