@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '7.0'
   s.source       = { :git => "https://github.com/VlowLib/Vlow.git" }
-  s.source_files  = "Vlow"
+  s.source_files  = "Vlow", "PureData/Externals"
 
   s.resources = "PureData/Patches/*.pd"
 

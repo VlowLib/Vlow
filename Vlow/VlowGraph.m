@@ -48,6 +48,7 @@ void freeverb_tilde_setup(void);
 {
     VlowNode *prev = nil;
     for (VlowNode *node in nodes) {
+        [node activate];
         if (prev) {
             [self connect:prev to:node];
         }

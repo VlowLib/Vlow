@@ -12,14 +12,17 @@
 #import "PdBase.h"
 #import "PdFile.h"
 
+PdFile *openPatch(NSString *name) {
+    return [PdFile openFileNamed:[name stringByAppendingString:@".pd"]
+                            path:[[NSBundle mainBundle] resourcePath]];
+}
+
 @implementation VlowNode
 
 + (instancetype)node:(NSString *)name
 {
     VlowNode *node = [VlowNode new];
     node.name = name;
-    node.patch = [PdFile openFileNamed:[name stringByAppendingString:@".pd"]
-                                  path:[[NSBundle mainBundle] resourcePath]];
     return node;
 }
 
@@ -31,6 +34,11 @@
     self.name = @"";
     
     return self;
+}
+
+- (void)activate
+{
+    self.patch = self.patch ?: openPatch(self.name);
 }
 
 - (NSString *)description
@@ -68,7 +76,7 @@
 {
     VlowNode *copy = [[[self class] allocWithZone:zone] init];
     copy.name = self.name;
-    copy.patch = [self.patch openNewInstance];
+    copy.patch = openPatch(self.name);
     return copy;
 }
 
