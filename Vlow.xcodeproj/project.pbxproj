@@ -10,6 +10,7 @@
 		4817EA77F7B1D4D2FB718C4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
 		5F67A7CD1A545ACC0031FF27 /* VlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7CC1A545ACC0031FF27 /* VlowTests.m */; };
 		A296A7AFD4659588A4079113 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
+		F06108771AE97A2100D240C8 /* wah.pd in Resources */ = {isa = PBXBuildFile; fileRef = F06108761AE97A2100D240C8 /* wah.pd */; };
 		F077171A1AD7250500242FDB /* pitchshift.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E71A55E2060031FF27 /* pitchshift.pd */; };
 		F077171B1AD7250500242FDB /* vlowin.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E81A55E2060031FF27 /* vlowin.pd */; };
 		F077171C1AD7250500242FDB /* vlowout.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E91A55E2060031FF27 /* vlowout.pd */; };
@@ -39,6 +40,7 @@
 		5F67A7E81A55E2060031FF27 /* vlowin.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vlowin.pd; path = Patches/vlowin.pd; sourceTree = "<group>"; };
 		5F67A7E91A55E2060031FF27 /* vlowout.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vlowout.pd; path = Patches/vlowout.pd; sourceTree = "<group>"; };
 		684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F06108761AE97A2100D240C8 /* wah.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wah.pd; path = Patches/wah.pd; sourceTree = "<group>"; };
 		F077171F1AD7654500242FDB /* VlowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowGraph.h; sourceTree = "<group>"; };
 		F07717201AD7654500242FDB /* VlowGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowGraph.m; sourceTree = "<group>"; };
 		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F080CC621AE5406400D6B59A /* distortion.pd */,
 				F080CC631AE5406400D6B59A /* echo.pd */,
 				F080CC681AE54C3700D6B59A /* reverb.pd */,
+				F06108761AE97A2100D240C8 /* wah.pd */,
 			);
 			name = Patches;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				F086922D1AD7219300C2EF28 /* Main.storyboard in Resources */,
 				F080CC691AE54C3700D6B59A /* reverb.pd in Resources */,
+				F06108771AE97A2100D240C8 /* wah.pd in Resources */,
 				F086922E1AD7219E00C2EF28 /* LaunchScreen.xib in Resources */,
 				F080CC641AE5406400D6B59A /* distortion.pd in Resources */,
 				F077171A1AD7250500242FDB /* pitchshift.pd in Resources */,
