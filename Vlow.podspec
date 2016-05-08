@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "libpd"
-  s.dependency "ReactiveCocoa", "~> 2.4"
+  s.dependency "ReactiveCocoa", ">= 2.0"
   s.dependency "ObjectiveSugar", "~> 1.1"
 
   s.compiler_flags = '-DPD'
