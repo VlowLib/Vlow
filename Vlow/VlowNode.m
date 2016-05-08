@@ -13,8 +13,9 @@
 #import "PdFile.h"
 
 PdFile *openPatch(NSString *name) {
+    NSString *resourcePath = [[NSBundle bundleForClass:VlowNode.class] resourcePath];
     return [PdFile openFileNamed:[name stringByAppendingString:@".pd"]
-                            path:[[NSBundle mainBundle] resourcePath]];
+                            path:resourcePath];
 }
 
 @implementation VlowNode
