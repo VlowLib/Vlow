@@ -20,10 +20,10 @@
 @property (nonatomic, strong) PdFile *patch;
 
 + (instancetype)node:(NSString *)name;
+- (instancetype)initWithName:(NSString *)name;
 
 - (void)activate;
 
 - (void)setParameter:(NSString *)paramName toValue:(id)value;
-- (void)bindParameter:(NSString *)paramName toSignal:(RACSignal *)signal;
 
 @end

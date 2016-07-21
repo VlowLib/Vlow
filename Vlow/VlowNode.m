@@ -22,17 +22,16 @@ PdFile *openPatch(NSString *name) {
 
 + (instancetype)node:(NSString *)name
 {
-    VlowNode *node = [VlowNode new];
-    node.name = name;
+    VlowNode *node = [[VlowNode alloc] initWithName:name];
     return node;
 }
 
-- (id)init
+- (instancetype)initWithName:(NSString *)name
 {
     if (!(self = [super init]))
         return nil;
     
-    self.name = @"";
+    self.name = name;
     
     return self;
 }
@@ -45,13 +44,6 @@ PdFile *openPatch(NSString *name) {
 - (NSString *)description
 {
     return self.name;
-}
-
-- (void)bindParameter:(NSString *)paramName toSignal:(RACSignal *)signal
-{
-    [signal subscribeNext:^(id value) {
-        [self setParameter:paramName toValue:value];
-    }];
 }
 
 - (void)setParameter:(NSString *)paramName toValue:(id)value

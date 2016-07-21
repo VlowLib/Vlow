@@ -16,6 +16,7 @@
 		F077171B1AD7250500242FDB /* vlowin.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E81A55E2060031FF27 /* vlowin.pd */; };
 		F077171C1AD7250500242FDB /* vlowout.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E91A55E2060031FF27 /* vlowout.pd */; };
 		F07717211AD7654500242FDB /* VlowGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F07717201AD7654500242FDB /* VlowGraph.m */; };
+		F080AFA21D18D98200BC8C5D /* Vlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F080AFA11D18D98200BC8C5D /* Vlow.swift */; };
 		F080CC611AE53F3000D6B59A /* freeverb~.c in Sources */ = {isa = PBXBuildFile; fileRef = F080CC601AE53F3000D6B59A /* freeverb~.c */; };
 		F080CC641AE5406400D6B59A /* distortion.pd in Resources */ = {isa = PBXBuildFile; fileRef = F080CC621AE5406400D6B59A /* distortion.pd */; };
 		F080CC651AE5406400D6B59A /* echo.pd in Resources */ = {isa = PBXBuildFile; fileRef = F080CC631AE5406400D6B59A /* echo.pd */; };
@@ -46,6 +47,8 @@
 		F077171F1AD7654500242FDB /* VlowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowGraph.h; sourceTree = "<group>"; };
 		F07717201AD7654500242FDB /* VlowGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowGraph.m; sourceTree = "<group>"; };
 		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		F080AFA01D18D98200BC8C5D /* VlowSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VlowSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		F080AFA11D18D98200BC8C5D /* Vlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vlow.swift; sourceTree = "<group>"; };
 		F080CC601AE53F3000D6B59A /* freeverb~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "freeverb~.c"; path = "Externals/freeverb~.c"; sourceTree = "<group>"; };
 		F080CC621AE5406400D6B59A /* distortion.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = distortion.pd; path = Patches/distortion.pd; sourceTree = "<group>"; };
 		F080CC631AE5406400D6B59A /* echo.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = echo.pd; path = Patches/echo.pd; sourceTree = "<group>"; };
@@ -120,8 +123,10 @@
 				5F67A7D71A545C340031FF27 /* VlowNode.m */,
 				F077171F1AD7654500242FDB /* VlowGraph.h */,
 				F07717201AD7654500242FDB /* VlowGraph.m */,
+				F080AFA11D18D98200BC8C5D /* Vlow.swift */,
 				5F67A7E61A55E2060031FF27 /* PureData */,
 				5F67A7BD1A545ACC0031FF27 /* Supporting Files */,
+				F080AFA01D18D98200BC8C5D /* VlowSample-Bridging-Header.h */,
 			);
 			path = Vlow;
 			sourceTree = "<group>";
@@ -264,6 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = Vlow;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Chelseph;
 				TargetAttributes = {
@@ -414,6 +420,7 @@
 			files = (
 				F08692281AD7203C00C2EF28 /* VlowNode.m in Sources */,
 				F07717211AD7654500242FDB /* VlowGraph.m in Sources */,
+				F080AFA21D18D98200BC8C5D /* Vlow.swift in Sources */,
 				F086920B1AD71FAE00C2EF28 /* ViewController.m in Sources */,
 				F08692081AD71FAE00C2EF28 /* AppDelegate.m in Sources */,
 				F08692051AD71FAE00C2EF28 /* main.m in Sources */,
@@ -564,6 +571,7 @@
 			baseConfigurationReference = 684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -584,6 +592,8 @@
 					"-DPD",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vlow/VlowSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -592,6 +602,7 @@
 			baseConfigurationReference = F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = VlowSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
@@ -609,6 +620,7 @@
 					"-DPD",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vlow/VlowSample-Bridging-Header.h";
 			};
 			name = Release;
 		};
