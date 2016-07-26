@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.dependency "libpd"
   s.dependency "ObjectiveSugar", "~> 1.1"
 
-  s.compiler_flags = '-DPD'
+  s.compiler_flags = '-DPD -DHAVE_ALLOCA_H'
 
 end

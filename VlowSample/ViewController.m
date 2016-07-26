@@ -24,8 +24,9 @@
     [super viewDidLoad];
     
     g = [VlowGraph new];
-    VlowNode *rev = VLO(@"reverb");
-    [rev setParameter:@"mix" toValue:@1];
+    VlowNode *rev = VLO(@"pitchshift");
+    [rev setParameter:@"transpose" toValue:@5];
+    [rev setParameter:@"mix" toValue:@0.5];
     g.nodes = @[VlowIn, rev, VlowOut];
 }
 
