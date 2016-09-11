@@ -25,5 +25,6 @@
 - (void)activate;
 
 - (void)setParameter:(NSString *)paramName toValue:(id)value;
+- (id)valueForParameter:(NSString *)paramName;
 
 @end

@@ -9,6 +9,8 @@
 #X obj 80 84 tapeshift;
 #X obj 20 138 mix~;
 #X floatatom 194 48 5 0 0 0 - - -, f 5;
+#X obj 63 34 adc~;
+#X obj 129 228 dac~;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;
 #X connect 1 0 9 0;
@@ -18,4 +20,10 @@
 #X connect 6 0 8 2;
 #X connect 7 0 8 1;
 #X connect 8 0 2 0;
+#X connect 8 0 11 0;
+#X connect 8 0 11 1;
 #X connect 9 0 7 1;
+#X connect 10 0 7 0;
+#X connect 10 0 8 0;
+#X connect 10 1 7 0;
+#X connect 10 1 8 0;

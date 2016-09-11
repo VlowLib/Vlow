@@ -19,6 +19,9 @@ PdFile *openPatch(NSString *name) {
 }
 
 @implementation VlowNode
+{
+    NSMutableDictionary<NSString *, id> *_valueForParam;
+}
 
 + (instancetype)node:(NSString *)name
 {
@@ -32,6 +35,7 @@ PdFile *openPatch(NSString *name) {
         return nil;
     
     self.name = name;
+    _valueForParam = [[NSMutableDictionary alloc] init];
     
     return self;
 }
@@ -39,6 +43,9 @@ PdFile *openPatch(NSString *name) {
 - (void)activate
 {
     self.patch = self.patch ?: openPatch(self.name);
+    for (NSString *paramName in _valueForParam.allKeys) {
+      [self setParameter:paramName toValue:_valueForParam[paramName]];
+    }
 }
 
 - (NSString *)description
@@ -48,8 +55,11 @@ PdFile *openPatch(NSString *name) {
 
 - (void)setParameter:(NSString *)paramName toValue:(id)value
 {
-    if (!value || !paramName || paramName.length == 0) {
-        return;
+    NSAssert(value && paramName && paramName.length > 0, @"Invalid function parameters in setParameter");
+    _valueForParam[paramName] = value;
+
+    if (!self.patch) {
+      return;
     }
     NSString *receiver = [NSString stringWithFormat:@"%@-%d",
                           paramName, self.patch.dollarZero];
@@ -61,6 +71,11 @@ PdFile *openPatch(NSString *name) {
     } else if ([value isKindOfClass:[NSArray class]]) {
         [PdBase sendList:value toReceiver:receiver];
     }
+}
+
+- (id)valueForParameter:(NSString *)paramName
+{
+    return _valueForParam[paramName];
 }
 
 #pragma mark - NSCopying
