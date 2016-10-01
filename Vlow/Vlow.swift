@@ -2,7 +2,7 @@
 
 import Foundation
 
-public func VLO(name: String) -> VlowNode {
+public func VLO(_ name: String) -> VlowNode {
   return VlowNode(name)
 }
 
