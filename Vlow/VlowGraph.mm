@@ -10,7 +10,6 @@
 #import <libpd/PdAudioController.h>
 #import <libpd/PdBase.h>
 #import <libpd/PdFile.h>
-#import <ObjectiveSugar/ObjectiveSugar.h>
 #import "VlowGraph.h"
 #import "VlowNode.h"
 
