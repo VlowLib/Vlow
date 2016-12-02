@@ -71,7 +71,7 @@ void freeverb_tilde_setup(void);
     [PdBase addToSearchPath:[[NSBundle bundleForClass:self.class] bundlePath]];
 
     self.controller = [PdAudioController new];
-    PdAudioStatus stat = [self.controller configurePlaybackWithSampleRate:44100
+    PdAudioStatus stat = [self.controller configurePlaybackWithSampleRate:48000
                                                            numberChannels:2
                                                              inputEnabled:YES
                                                             mixingEnabled:YES];
