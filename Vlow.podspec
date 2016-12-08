@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "libpd"
-  s.dependency "ReactiveCocoa"
 
   s.compiler_flags = '-DPD -DHAVE_ALLOCA_H'
 

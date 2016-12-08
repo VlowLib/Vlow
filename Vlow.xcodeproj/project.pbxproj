@@ -10,21 +10,21 @@
 		4817EA77F7B1D4D2FB718C4D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
 		5F67A7CD1A545ACC0031FF27 /* VlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7CC1A545ACC0031FF27 /* VlowTests.m */; };
 		A296A7AFD4659588A4079113 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 016626F0FFF2840991F969E3 /* libPods.a */; };
+		F0204F071DF8DD280013BD1C /* VlowGraph.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0204F051DF8DD280013BD1C /* VlowGraph.mm */; };
+		F0204F081DF8DD280013BD1C /* VlowNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0204F061DF8DD280013BD1C /* VlowNode.mm */; };
 		F06108771AE97A2100D240C8 /* wah.pd in Resources */ = {isa = PBXBuildFile; fileRef = F06108761AE97A2100D240C8 /* wah.pd */; };
 		F06108791AE97B8900D240C8 /* volume.pd in Resources */ = {isa = PBXBuildFile; fileRef = F06108781AE97B8900D240C8 /* volume.pd */; };
 		F077171A1AD7250500242FDB /* pitchshift.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E71A55E2060031FF27 /* pitchshift.pd */; };
 		F077171B1AD7250500242FDB /* vlowin.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E81A55E2060031FF27 /* vlowin.pd */; };
 		F077171C1AD7250500242FDB /* vlowout.pd in Resources */ = {isa = PBXBuildFile; fileRef = 5F67A7E91A55E2060031FF27 /* vlowout.pd */; };
-		F07717211AD7654500242FDB /* VlowGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = F07717201AD7654500242FDB /* VlowGraph.m */; };
 		F080AFA21D18D98200BC8C5D /* Vlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F080AFA11D18D98200BC8C5D /* Vlow.swift */; };
-		F080CC611AE53F3000D6B59A /* freeverb~.c in Sources */ = {isa = PBXBuildFile; fileRef = F080CC601AE53F3000D6B59A /* freeverb~.c */; };
+		F080CC611AE53F3000D6B59A /* freeverb~.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F080CC601AE53F3000D6B59A /* freeverb~.cpp */; };
 		F080CC641AE5406400D6B59A /* distortion.pd in Resources */ = {isa = PBXBuildFile; fileRef = F080CC621AE5406400D6B59A /* distortion.pd */; };
 		F080CC651AE5406400D6B59A /* echo.pd in Resources */ = {isa = PBXBuildFile; fileRef = F080CC631AE5406400D6B59A /* echo.pd */; };
 		F080CC691AE54C3700D6B59A /* reverb.pd in Resources */ = {isa = PBXBuildFile; fileRef = F080CC681AE54C3700D6B59A /* reverb.pd */; };
 		F08692051AD71FAE00C2EF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F08692041AD71FAE00C2EF28 /* main.m */; };
 		F08692081AD71FAE00C2EF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F08692071AD71FAE00C2EF28 /* AppDelegate.m */; };
 		F086920B1AD71FAE00C2EF28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F086920A1AD71FAE00C2EF28 /* ViewController.m */; };
-		F08692281AD7203C00C2EF28 /* VlowNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F67A7D71A545C340031FF27 /* VlowNode.m */; };
 		F086922D1AD7219300C2EF28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F086920C1AD71FAE00C2EF28 /* Main.storyboard */; };
 		F086922E1AD7219E00C2EF28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F08692111AD71FAE00C2EF28 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
@@ -37,19 +37,19 @@
 		5F67A7CB1A545ACC0031FF27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F67A7CC1A545ACC0031FF27 /* VlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlowTests.m; sourceTree = "<group>"; };
 		5F67A7D61A545C340031FF27 /* VlowNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowNode.h; sourceTree = "<group>"; };
-		5F67A7D71A545C340031FF27 /* VlowNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowNode.m; sourceTree = "<group>"; };
 		5F67A7E71A55E2060031FF27 /* pitchshift.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pitchshift.pd; path = Patches/pitchshift.pd; sourceTree = "<group>"; };
 		5F67A7E81A55E2060031FF27 /* vlowin.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vlowin.pd; path = Patches/vlowin.pd; sourceTree = "<group>"; };
 		5F67A7E91A55E2060031FF27 /* vlowout.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = vlowout.pd; path = Patches/vlowout.pd; sourceTree = "<group>"; };
 		684F8DEF96C0090B86B391B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F0204F051DF8DD280013BD1C /* VlowGraph.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VlowGraph.mm; sourceTree = "<group>"; };
+		F0204F061DF8DD280013BD1C /* VlowNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VlowNode.mm; sourceTree = "<group>"; };
 		F06108761AE97A2100D240C8 /* wah.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = wah.pd; path = Patches/wah.pd; sourceTree = "<group>"; };
 		F06108781AE97B8900D240C8 /* volume.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = volume.pd; path = Patches/volume.pd; sourceTree = "<group>"; };
 		F077171F1AD7654500242FDB /* VlowGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VlowGraph.h; sourceTree = "<group>"; };
-		F07717201AD7654500242FDB /* VlowGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VlowGraph.m; sourceTree = "<group>"; };
 		F0784ACB2DA4AABA69BDAF3C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		F080AFA01D18D98200BC8C5D /* VlowSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VlowSample-Bridging-Header.h"; sourceTree = "<group>"; };
 		F080AFA11D18D98200BC8C5D /* Vlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vlow.swift; sourceTree = "<group>"; };
-		F080CC601AE53F3000D6B59A /* freeverb~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "freeverb~.c"; path = "Externals/freeverb~.c"; sourceTree = "<group>"; };
+		F080CC601AE53F3000D6B59A /* freeverb~.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "freeverb~.cpp"; path = "Externals/freeverb~.cpp"; sourceTree = "<group>"; };
 		F080CC621AE5406400D6B59A /* distortion.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = distortion.pd; path = Patches/distortion.pd; sourceTree = "<group>"; };
 		F080CC631AE5406400D6B59A /* echo.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = echo.pd; path = Patches/echo.pd; sourceTree = "<group>"; };
 		F080CC671AE5475400D6B59A /* Vlow.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Vlow.podspec; sourceTree = SOURCE_ROOT; };
@@ -120,9 +120,9 @@
 			children = (
 				5F67A7BF1A545ACC0031FF27 /* Vlow.h */,
 				5F67A7D61A545C340031FF27 /* VlowNode.h */,
-				5F67A7D71A545C340031FF27 /* VlowNode.m */,
+				F0204F061DF8DD280013BD1C /* VlowNode.mm */,
 				F077171F1AD7654500242FDB /* VlowGraph.h */,
-				F07717201AD7654500242FDB /* VlowGraph.m */,
+				F0204F051DF8DD280013BD1C /* VlowGraph.mm */,
 				F080AFA11D18D98200BC8C5D /* Vlow.swift */,
 				5F67A7E61A55E2060031FF27 /* PureData */,
 				5F67A7BD1A545ACC0031FF27 /* Supporting Files */,
@@ -177,7 +177,7 @@
 		F080CC5F1AE53E6F00D6B59A /* Externals */ = {
 			isa = PBXGroup;
 			children = (
-				F080CC601AE53F3000D6B59A /* freeverb~.c */,
+				F080CC601AE53F3000D6B59A /* freeverb~.cpp */,
 			);
 			name = Externals;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			attributes = {
 				CLASSPREFIX = Vlow;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Chelseph;
 				TargetAttributes = {
 					5F67A7C41A545ACC0031FF27 = {
@@ -278,6 +278,7 @@
 					};
 					F08691FF1AD71FAE00C2EF28 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -418,13 +419,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08692281AD7203C00C2EF28 /* VlowNode.m in Sources */,
-				F07717211AD7654500242FDB /* VlowGraph.m in Sources */,
 				F080AFA21D18D98200BC8C5D /* Vlow.swift in Sources */,
+				F0204F081DF8DD280013BD1C /* VlowNode.mm in Sources */,
 				F086920B1AD71FAE00C2EF28 /* ViewController.m in Sources */,
 				F08692081AD71FAE00C2EF28 /* AppDelegate.m in Sources */,
 				F08692051AD71FAE00C2EF28 /* main.m in Sources */,
-				F080CC611AE53F3000D6B59A /* freeverb~.c in Sources */,
+				F0204F071DF8DD280013BD1C /* VlowGraph.mm in Sources */,
+				F080CC611AE53F3000D6B59A /* freeverb~.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,8 +464,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -474,11 +477,9 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -489,6 +490,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = (
+					"-DPD",
+					"-DHAVE_ALLOCA_H",
+					"-DHAVE_UNISTD_H",
+				);
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -509,8 +515,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -519,6 +527,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -527,7 +537,13 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = (
+					"-DPD",
+					"-DHAVE_ALLOCA_H",
+					"-DHAVE_UNISTD_H",
+				);
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -587,10 +603,6 @@
 					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ObjectiveSugar\"",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
-					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public/libpd\"",
 					"-DPD",
 				);
@@ -598,6 +610,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vlow/VlowSample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -616,16 +629,13 @@
 					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ObjectiveSugar\"",
-					"-isystem",
-					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
-					"-isystem",
 					"\"${PODS_ROOT}/Headers/Public/libpd\"",
 					"-DPD",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jconst.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vlow/VlowSample-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Chelseph. All rights reserved.
 //
 
-#import <ReactiveCocoa/ReactiveCocoa.h>
 #import <libpd/PdAudioController.h>
 #import <libpd/PdBase.h>
 #import <libpd/PdFile.h>
